@@ -3,8 +3,6 @@ package com.example.parserlog.services.impl;
 import com.example.parserlog.services.MappingUserToDateTime;
 import com.example.parserlog.services.ParseService;
 import com.example.parserlog.utils.ReadLogsUtil;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +19,8 @@ import java.util.stream.Stream;
 public class MappingUserToDateTimeImpl implements MappingUserToDateTime {
     /**
      * Method that matches the user with the ZonedDateTime
-     * @param url - url to file with logs
+     *
+     * @param url          - url to file with logs
      * @param parseService - Object for parsing logs
      * @return Map<String, ZonedDateTime> - User id to ZonedDateTime
      */
