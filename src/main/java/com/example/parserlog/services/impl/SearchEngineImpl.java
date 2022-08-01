@@ -30,6 +30,7 @@ public class SearchEngineImpl implements SearchEngine {
      * @param limit - top users
      * @return List<User> - the best users
      */
+    @Override
     public List<User> getUsers(int limit) {
         Map<String, Pair<ZonedDateTime, ZonedDateTime>> map = convertToStartFinishPair(startsFile, finishesFile);
         return findUsers(limit, map);
